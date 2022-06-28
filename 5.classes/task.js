@@ -88,7 +88,9 @@ class Library {
         if(indexBook === -1) {
             return null;
         } else {
+            let book = this.books[indexBook];
             this.books.splice(indexBook, 1);
+            return book;
         }
     }
 };
